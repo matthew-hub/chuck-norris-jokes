@@ -1,0 +1,6 @@
+.app-topbar {
+  padding-left: 10px;
+  align-self: flex-end;
+  display: flex;
+  gap: 0 30px;
+}

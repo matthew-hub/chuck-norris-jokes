@@ -1,0 +1,32 @@
+.app-joke {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+  max-width: 700px;
+  font-size: 22px;
+  padding-left: 10px;
+  user-select: none;
+  
+}
+.app-joke > span {
+  padding-left: 10px;
+  font-size: 15px;
+  font-family: angkor;
+  color: #4f4f4f;
+}
+.app-joke > p {
+  padding-left: 10px;
+  text-indent: -10px;
+  min-height: 100px;
+  
+}
+
+.app-joke-interaction {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ 
+  gap: 0 40px;
+}

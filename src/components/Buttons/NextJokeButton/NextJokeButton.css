@@ -1,0 +1,45 @@
+.next-joke-button {
+  display: flex;
+  font-family: mochiy;
+}
+
+
+.next-joke-button > .btn {
+  position: relative;
+  outline: none;
+  font-family: mochiy;
+  border:  2px solid #E8E8E8;
+  background-color:var(--color-background);
+  font-size: 15px;
+  text-transform: uppercase;
+
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 8px 30px;
+}
+
+.next-joke-button > .btn::before {
+  content: 'Next';
+  display: grid;
+  padding: 8px 30px;
+  font-family: mochiy;
+  border:  2px solid #E8E8E8;
+  background-color:var(--color-background);
+  font-size: 15px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  place-items: center;
+  position: absolute;
+  top: 5px; 
+  left: 5px;
+  z-index: 1;
+  transition: all 0.2s ease;
+
+  
+}
+.next-joke-button > .btn:hover::before {
+  top: -2px; left: -2px;
+}
+
+
+ 
