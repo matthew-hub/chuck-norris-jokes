@@ -4,15 +4,16 @@
   flex-direction: column;
   gap: 10px 0;
   max-width: 700px;
-  font-size: 22px;
-  padding-left: 10px;
+  font-size: 24px;
+  /* padding-left: 10px; */
   user-select: none;
+  font-family: chuck;
   
 }
 .app-joke > span {
   padding-left: 10px;
   font-size: 15px;
-  font-family: angkor;
+  /* font-family: angkor; */
   color: #4f4f4f;
 }
 .app-joke > p {

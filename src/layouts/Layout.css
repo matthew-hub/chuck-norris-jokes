@@ -1,11 +1,14 @@
 .app-container {
-  background-image: url(../assets/chucknorris.png);
+  background-image: url(../assets/images/chucknorris.png);
+  padding: 25px;
+  padding-bottom: 0;
   padding-top: 50px;
+  /* padding-top: 40px; */
   display: flex;
   flex-direction: column;
   gap: 30px 0px;
-  height: 100%;
+  min-height: 100%;
   background-repeat: no-repeat;
-  background-position: 116% bottom;
-  background-size: 50%;
+  background-position: 105% bottom;
+  background-size: 45%;
 }

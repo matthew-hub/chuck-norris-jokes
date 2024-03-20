@@ -1,17 +1,20 @@
 .next-joke-button {
   display: flex;
-  font-family: mochiy;
+  font-family: chuck;
+  letter-spacing: 2px;
 }
 
 
 .next-joke-button > .btn {
   position: relative;
   outline: none;
-  font-family: mochiy;
-  border:  2px solid #E8E8E8;
-  background-color:var(--color-background);
-  font-size: 15px;
+  font-family: chuck;
+  letter-spacing: 2px;
+  border: 2px solid #E8E8E8;
+  /* background-color:var(--color-background); */
+  font-size: 18px;
   text-transform: uppercase;
+  background-color: #E9BE91;
 
   border-radius: 2px;
   cursor: pointer;
@@ -22,10 +25,11 @@
   content: 'Next';
   display: grid;
   padding: 8px 30px;
-  font-family: mochiy;
+  font-family: chuck;
   border:  2px solid #E8E8E8;
   background-color:var(--color-background);
-  font-size: 15px;
+  font-size: 18px;
+  color: #E8E8E8;
   border-radius: 2px;
   text-transform: uppercase;
   place-items: center;
@@ -38,7 +42,13 @@
   
 }
 .next-joke-button > .btn:hover::before {
+  /* background-color: #E9BE91; */
   top: -2px; left: -2px;
+  /* color: #000; */
+  /* text-shadow: -1px 0 rgb(46, 46, 46), 0 1px black, 1px 0 black, 0 -1px black; */
+  
+  /* color: black; */
+  /* border-color: #C98967; */
 }
 
 

@@ -1,16 +1,13 @@
-import Header from "../components/Header/Header.jsx";
 import Topbar from "../components/Topbar/Topbar.jsx";
-import Joke from "../components/Joke/Joke.jsx";
 import Footer from "../components/Footer/Footer.jsx";
-
+import { Outlet } from "react-router-dom";
 import "./Layout.css";
 const Layout = () => {
   return (
     <>
       <div className="app-container">
         <Topbar />
-        <Header />
-        <Joke />
+        <Outlet />
         <Footer />
       </div>
     </>
