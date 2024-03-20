@@ -2,5 +2,11 @@
   padding-left: 10px;
   align-self: flex-end;
   display: flex;
+  
+}
+.app-topbar > nav > ul {
+  display: flex;
   gap: 0 30px;
+  text-decoration: none;
+  list-style-type: none;
 }
