@@ -1,0 +1,31 @@
+.app-jokes-categories {
+  max-width: 770px;
+  gap: 10px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-jokes-categories-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 10px;
+  padding-left: 10px;
+}
+
+.app-jokes-category {
+  display: flex;
+  cursor: pointer;
+  margin-left: -5px;
+  padding: 0px 5px;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-jokes-category > span {
+  color: #E9BE91
+}
+
+.app-jokes-category:hover {
+  color: #E9BE91;
+}
