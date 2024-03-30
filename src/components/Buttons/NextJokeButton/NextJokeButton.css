@@ -4,52 +4,49 @@
   letter-spacing: 2px;
 }
 
-
 .next-joke-button > .btn {
   position: relative;
   outline: none;
   font-family: chuck;
   letter-spacing: 2px;
-  border: 2px solid #E8E8E8;
-  /* background-color:var(--color-background); */
-  font-size: 18px;
+  border: none;
+  font-size: 16px;
   text-transform: uppercase;
-  background-color: #E9BE91;
-
+  background-color: #e9be91;
+  color: #e8e8e8;
   border-radius: 2px;
   cursor: pointer;
-  padding: 8px 30px;
+  padding: 8px 24px;
 }
 
 .next-joke-button > .btn::before {
-  content: 'Next';
+  content: attr(data);
   display: grid;
-  padding: 8px 30px;
+  text-wrap: nowrap;
+  padding: 8px 24px;
   font-family: chuck;
-  border:  2px solid #E8E8E8;
-  background-color:var(--color-background);
-  font-size: 18px;
-  color: #E8E8E8;
+  border: 2px solid #e7e7e7;
+  background-color: var(--color-background);
+  font-size: 16px;
+  color: #e8e8e8;
   border-radius: 2px;
   text-transform: uppercase;
   place-items: center;
   position: absolute;
-  top: 5px; 
+  top: 5px;
   left: 5px;
   z-index: 1;
   transition: all 0.2s ease;
-
-  
-}
-.next-joke-button > .btn:hover::before {
-  /* background-color: #E9BE91; */
-  top: -2px; left: -2px;
-  /* color: #000; */
-  /* text-shadow: -1px 0 rgb(46, 46, 46), 0 1px black, 1px 0 black, 0 -1px black; */
-  
-  /* color: black; */
-  /* border-color: #C98967; */
 }
 
+.next-joke-button > .btn:active::before {
+  top: -2px;
+  left: -2px;
+}
 
- 
+@media (hover: hover) and (pointer: fine) {
+  .next-joke-button > .btn:hover::before {
+    top: -2px;
+    left: -2px;
+  }
+}
