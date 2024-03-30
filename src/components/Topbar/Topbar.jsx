@@ -6,9 +6,9 @@ function Topbar() {
 
   const liContent = () => {
     if (pathname !== "/about-chuck-norris") {
-      return <Link to="/about-chuck-norris">About Chuck</Link>;
+      return <Link to="/about-chuck-norris">About Chuck Norris</Link>;
     }
-    return <Link to="/">Jokes</Link>;
+    return <Link to="/">Chuck Norris Jokes</Link>;
   };
 
   return (
@@ -18,11 +18,10 @@ function Topbar() {
           <ul>
             <li>{liContent()}</li>
             <li>
-              <Link to="/new-joke">New Joke</Link>
+              <Link to="/stats">stats</Link>
             </li>
           </ul>
         </nav>
-        {/* <span>EN | PL</span> */}
       </div>
     </>
   );
