@@ -4,11 +4,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   cursor: pointer;
   gap: 0px 10px;
 }
-.app-like-button > p { 
+.app-like-button > p {
   /* text-indent: 0; */
   align-self: center;
   justify-self: center;
@@ -16,3 +15,31 @@
   /* padding: 20px; */
 }
 
+.app-like-button svg {
+  transition: transform 0.2s ease-in-out;
+}
+
+.app-like-button .liked {
+  color: red;
+  animation: jumpAndRotate 1s ease-in-out forwards;
+  position: relative;
+  z-index: 0;
+}
+
+@keyframes jumpAndRotate {
+  0% {
+    transform: translateY(0) rotateZ(0deg);
+  }
+  25% {
+    transform: translateY(-20px) rotateY(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotateY(0deg);
+  }
+  75% {
+    transform: translateY(-20px) rotateY(360deg);
+  }
+  100% {
+    transform: translateY(0) rotateY(360deg);
+  }
+}
