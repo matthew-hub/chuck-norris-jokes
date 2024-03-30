@@ -1,14 +1,42 @@
 .app-footer {
   flex-grow: 1;
   display: flex;
+  flex-direction: column;
   max-width: 700px;
-  align-items: end;
+  justify-content: end;
+  padding-top: 50px;
   color: #4f4f4f;
   font-size: 10px;
-  user-select: none;
-
-}
-.app-footer > span {
   padding-bottom: 20px;
+  user-select: none;
+  gap: 20px 0px;
 }
 
+.bmc-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px 0px;
+}
+
+.bmc-button {
+  color: #4f4f4f;
+  outline: none;
+  border: 0;
+  background-color: transparent;
+  display: flex;
+  font-family: chuck;
+  align-items: center;
+  gap: 0px 10px;
+}
+
+.bmc-button > img {
+  width: 18px;
+}
+
+.bmc-button > a {
+  color: #4f4f4f;
+}
+
+.using-api > a {
+  color: #4f4f4f;
+}

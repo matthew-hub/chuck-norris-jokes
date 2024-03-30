@@ -1,0 +1,16 @@
+.app-container {
+  background-color: var(--color-background);
+  background-image: url(../assets/images/chucknorris.png);
+  padding: 25px;
+  padding-bottom: 0;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0px;
+  min-height: 100dvh;
+  background-repeat: no-repeat;
+  background-position: 105% bottom;
+  background-size: 40%;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}

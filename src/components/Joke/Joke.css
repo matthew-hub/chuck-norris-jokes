@@ -3,23 +3,41 @@
   display: flex;
   flex-direction: column;
   gap: 10px 0;
-  max-width: 700px;
-  font-size: 22px;
-  padding-left: 10px;
+  max-width: 750px;
+  font-size: 20px;
   user-select: none;
-  
+  font-family: chuck;
 }
+
 .app-joke > span {
   padding-left: 10px;
   font-size: 15px;
-  font-family: angkor;
   color: #4f4f4f;
 }
-.app-joke > p {
-  padding-left: 10px;
-  text-indent: -10px;
-  min-height: 100px;
-  
+
+.app-joke > .app-joke-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-joke > .app-joke-text > p {
+  padding-top: 5px;
+}
+
+.app-joke > .app-joke-text > span {
+  font-size: 15px;
+  color: #4f4f4f;
+}
+
+.app-joke-update {
+  font-size: 18px;
+  padding-right: 100px;
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  color: #4f4f4f;
+  text-wrap: nowrap;
 }
 
 .app-joke-interaction {
@@ -27,6 +45,22 @@
   display: flex;
   flex-direction: row;
   align-items: center;
- 
   gap: 0 40px;
+}
+
+@media (min-width: 768px) {
+  .app-joke {
+    padding-top: 40px;
+    font-size: 24px;
+  }
+
+  .app-joke > span {
+    padding-left: 10px;
+    font-size: 15px;
+    color: #4f4f4f;
+  }
+
+  .app-joke > .app-joke-text {
+    padding-left: 10px;
+  }
 }

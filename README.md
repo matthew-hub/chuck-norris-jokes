@@ -1,10 +1,17 @@
-# Chuck Norris Jokes
+## Chuck Norris Jokes
 
-## React + Appwrite
+#### REACT:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- [ ] Styled Components
+- [x] React Router
 
-Currently, two official plugins are available:
+#### APPWRITE:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [x] Anonymously Login
+- [x] Create Joke DB
+
+#### ZUSTAND:
+
+- [x] Create chuckNorris State
+- [x] Get Joke - Functionality
+- [x] State Session Storage
