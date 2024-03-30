@@ -1,8 +1,4 @@
-# Chuck Norris Jokes
-
-## React + Appwrite + Zustand
-
-### TODO
+## Chuck Norris Jokes
 
 #### REACT:
 
@@ -13,10 +9,9 @@
 
 - [x] Anonymously Login
 - [x] Create Joke DB
-- [ ] New Joke - Functionality
 
 #### ZUSTAND:
+
 - [x] Create chuckNorris State
 - [x] Get Joke - Functionality
-- [x] Handle State Session Storage
-
+- [x] State Session Storage
