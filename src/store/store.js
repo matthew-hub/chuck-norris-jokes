@@ -8,7 +8,8 @@ const useChuckStore = create(
     (set, get) => ({
       joke: {},
       category: null,
-
+      likes: 0,
+      id: null, // chuck joke db id not the api joke id
       getTheJoke: async () => {
         let joke = {};
         if (!get().category) {
@@ -19,7 +20,7 @@ const useChuckStore = create(
           joke = await fetch(`https://api.chucknorris.io/jokes/random?category=${get().category}`);
         }
         // set the joke
-        set({ joke: await joke.json() });
+        set({ joke: await joke.json(), id: null, likes: 0 });
       },
 
       setCategory: (category) => {
@@ -29,9 +30,13 @@ const useChuckStore = create(
           } else {
             set({ category: null });
           }
-
-          // get().getTheJoke();
         }
+      },
+      setChuckData: (data) => {
+        set((state) => ({
+          ...state,
+          ...data,
+        }));
       },
     }),
     {
@@ -40,4 +45,26 @@ const useChuckStore = create(
     }
   )
 );
-export { useChuckStore };
+
+const useUserStore = create((set, get) => ({
+  id: null, // USER ID
+  liked: [],
+  read: [],
+
+  setUser: (user) => {
+    set({ ...user });
+  },
+
+  getUserData: (name) => {
+    return get()[name];
+  },
+
+  setUserData: (data) => {
+    set((state) => ({
+      ...state,
+      ...data,
+    }));
+  },
+}));
+
+export { useChuckStore, useUserStore };
