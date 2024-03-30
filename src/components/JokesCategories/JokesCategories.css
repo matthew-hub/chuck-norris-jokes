@@ -3,21 +3,21 @@
   gap: 10px 0px;
   display: flex;
   flex-direction: column;
+  padding-top: 10px;
+  overflow-x: auto;
+  padding-bottom: 5px;
 }
 
 .app-jokes-categories-content {
   display: flex;
   flex-wrap: wrap;
+  min-width: 555px;
   gap: 10px 10px;
-  padding-left: 10px;
 }
 
 .app-jokes-category {
   display: flex;
   cursor: pointer;
-  margin-left: -5px;
-  padding: 0px 5px;
-  font-size: 16px;
   justify-content: center;
   align-items: center;
 }
@@ -28,4 +28,20 @@
 
 .app-jokes-category:hover {
   color: #E9BE91;
+}
+
+@media (min-width: 768px) { 
+  .app-jokes-category {
+    display: flex;
+    cursor: pointer;
+    margin-left: -5px;
+    padding: 0px 5px;
+    font-size: 16px;
+   
+  }
+  .app-jokes-categories-content {
+    padding-left: 10px;
+  }
+  
+  
 }

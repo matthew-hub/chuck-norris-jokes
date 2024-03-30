@@ -1,5 +1,4 @@
 import { useChuckStore } from "../../store/store";
-
 import "./JokesCategories.css";
 
 const JokesCategories = () => {
@@ -29,7 +28,6 @@ const JokesCategories = () => {
     setChuckCategory(category);
     getTheJoke();
   };
-  console.log("[chuck]:", chuckStoreCategory);
 
   return (
     <div className="app-jokes-categories">
