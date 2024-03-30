@@ -1,18 +1,27 @@
 .app-like-button {
-  outline: none;
   user-select: none;
   display: flex;
   align-items: center;
   justify-content: center;
-
   cursor: pointer;
   gap: 0px 10px;
 }
-.app-like-button > p { 
-  /* text-indent: 0; */
+
+.app-like-button > button {
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: 0px 15px;
+}
+
+.app-like-button > button > span { 
+  font-size: 24px;
+  font-family: chuck;
   align-self: center;
   justify-self: center;
   display: block;
-  /* padding: 20px; */
 }
+
 
