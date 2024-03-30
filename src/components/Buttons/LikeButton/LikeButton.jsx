@@ -1,13 +1,13 @@
-/* eslint-disable react/prop-types */
-import { useRef } from "react";
+import { useRef, useState} from "react";
 import { useChuckStore, useUserStore } from "../../../store/store";
 import { createDoc, getUserDoc, updateDoc, updateUserDoc } from "../../../appwrite/appwrite";
-import likeicon from "../../../assets/icons/likeicon.svg";
+import LikeIcon from "./LikeIcon";
 // TODO: animate count likes
 import "./LikeButton.css";
 
 const LikeButton = () => {
   const request = useRef(false); // LIKE JOKE EVENT
+  const [isLiked, setIsLiked] = useState(false);
   // CHUCK STORE
   const joke = useChuckStore((state) => state.joke);
   const id = useChuckStore((state) => state.id);
@@ -20,6 +20,8 @@ const LikeButton = () => {
 
   // LIKE JOKE EVENT
   const likeJokeEvent = () => {
+    setIsLiked(!isLiked);
+    
     if (request.current) {
       console.log("[EVENT IN PROGRESS]:");
       return;
@@ -88,7 +90,7 @@ const LikeButton = () => {
   return (
     <div className="app-like-button">
       <button onClick={likeJokeEvent}>
-        <img src={likeicon} alt="" />
+         <LikeIcon isLiked={isLiked} />
         <span>{likes}</span>
       </button>
     </div>
